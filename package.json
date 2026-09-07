@@ -1,0 +1,55 @@
+{
+  "name": "national-bank-of-tajikistan-exchange-rate",
+  "version": "1.2.8",
+  "description": "Official National Bank of Tajikistan (Tajikistan) daily exchange rates — 36 currencies vs TJS, history since 2010. Zero-dependency Node.js/TypeScript client.",
+  "keywords": [
+    "nbt",
+    "national",
+    "bank",
+    "of",
+    "tajikistan",
+    "exchange-rate",
+    "exchange-rates",
+    "currency",
+    "forex",
+    "fx",
+    "tjs",
+    "central-bank",
+    "official-rates",
+    "tajikistan",
+    "api",
+    "typescript"
+  ],
+  "homepage": "https://allratestoday.com/central-bank-rates-api/nbt/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AllRates-Today/national-bank-of-tajikistan-exchange-rate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AllRates-Today/national-bank-of-tajikistan-exchange-rate/issues"
+  },
+  "license": "MIT",
+  "author": "AllRatesToday <hello@allratestoday.com> (https://allratestoday.com)",
+  "type": "module",
+  "main": "./index.cjs",
+  "module": "./index.mjs",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.mjs",
+      "require": "./index.cjs"
+    }
+  },
+  "files": [
+    "index.mjs",
+    "index.cjs",
+    "index.d.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "sideEffects": false
+}
