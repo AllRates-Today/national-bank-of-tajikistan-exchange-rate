@@ -70,10 +70,10 @@ const pair = await getRate('USD', 'TJS', { apiKey: 'art_live_...' });
 {
   bank: 'nbt',
   name: 'National Bank of Tajikistan',
-  rate_date: '2026-09-05',   // National Bank of Tajikistan's own publication date
+  rate_date: '2026-09-09',   // National Bank of Tajikistan's own publication date
   source: 'USD',
   target: 'TJS',
-  rate: 9.2573,
+  rate: 9.2414,
   rate_type: 'reference',
   derived: false,
   method: 'published',
@@ -98,9 +98,9 @@ console.log(table.rate_date, table.rates.length);
 {
   bank: 'nbt',
   name: 'National Bank of Tajikistan',
-  rate_date: '2026-09-05',
+  rate_date: '2026-09-09',
   rates: [
-    { "base": "USD", "quote": "TJS", "type": "reference", "value": 9.2573 },
+    { "base": "USD", "quote": "TJS", "type": "reference", "value": 9.2414 },
     // … the rest of the published table (36 currencies vs TJS)
   ],
   disclaimer: '…'
@@ -140,7 +140,7 @@ Paid plans. One resolved rate per publication date — ready for charting, reval
 import { getHistory } from 'national-bank-of-tajikistan-exchange-rate';
 
 const series = await getHistory(
-  { source: 'USD', target: 'TJS', from: '2026-01-01', to: '2026-09-05' },
+  { source: 'USD', target: 'TJS', from: '2026-01-01', to: '2026-09-09' },
   { apiKey: 'art_live_...' }
 );
 ```
@@ -153,11 +153,11 @@ const series = await getHistory(
   source: 'USD',
   target: 'TJS',
   from: '2026-01-01',
-  to: '2026-09-05',
+  to: '2026-09-09',
   count: 152,
   rates: [
     // one entry per publication date
-    { date: '2026-09-05', rate: 9.2573, rate_type: 'reference', derived: false, method: 'published' },
+    { date: '2026-09-09', rate: 9.2414, rate_type: 'reference', derived: false, method: 'published' },
     // …
   ],
   disclaimer: '…'
@@ -235,6 +235,14 @@ getRate('USD', 'TJS', { apiKey: 'art_live_...' }).then((pair) => console.log(pai
 | `getLatestRates({ apiKey })` | Free | The central bank's full latest published table |
 | `getRatesForDate(date, { apiKey, source?, target? })` | Paid | The official table (or one pair) for a YYYY-MM-DD date |
 | `getHistory({ symbol \| source+target, from?, to? }, { apiKey })` | Paid | Daily series since 2010 |
+
+## 📥 Bulk data (no key)
+
+Need the whole archive rather than an API call? The same published tables are mirrored daily as open data:
+
+- Hugging Face: [AllRates/central-bank-exchange-rates](https://huggingface.co/datasets/AllRates/central-bank-exchange-rates) — one CSV per institution (`rates/nbt.csv`)
+- Kaggle: [allratestoday/central-bank-exchange-rates](https://www.kaggle.com/datasets/allratestoday/central-bank-exchange-rates)
+- CDN JSON: `https://cdn.jsdelivr.net/gh/AllRates-Today/central-bank-exchange-rates@main/data/nbt/latest.json`
 
 ## 🔗 Links
 
