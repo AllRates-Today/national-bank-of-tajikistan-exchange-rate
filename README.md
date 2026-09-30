@@ -85,10 +85,10 @@ const pair = await getRate('USD', 'TJS', { apiKey: 'art_live_...' });
 {
   bank: 'nbt',
   name: 'National Bank of Tajikistan',
-  rate_date: '2026-09-09',   // National Bank of Tajikistan's own publication date
+  rate_date: '2026-09-25',   // National Bank of Tajikistan's own publication date
   source: 'USD',
   target: 'TJS',
-  rate: 9.2414,
+  rate: 9.2303,
   rate_type: 'reference',
   derived: false,
   method: 'published',
@@ -113,9 +113,9 @@ console.log(table.rate_date, table.rates.length);
 {
   bank: 'nbt',
   name: 'National Bank of Tajikistan',
-  rate_date: '2026-09-09',
+  rate_date: '2026-09-25',
   rates: [
-    { "base": "USD", "quote": "TJS", "type": "reference", "value": 9.2414 },
+    { "base": "USD", "quote": "TJS", "type": "reference", "value": 9.2303 },
     // … the rest of the published table (36 currencies vs TJS)
   ],
   disclaimer: '…'
@@ -155,7 +155,7 @@ Paid plans. One resolved rate per publication date — ready for charting, reval
 import { getHistory } from 'national-bank-of-tajikistan-exchange-rate';
 
 const series = await getHistory(
-  { source: 'USD', target: 'TJS', from: '2026-01-01', to: '2026-09-09' },
+  { source: 'USD', target: 'TJS', from: '2026-01-01', to: '2026-09-25' },
   { apiKey: 'art_live_...' }
 );
 ```
@@ -168,11 +168,11 @@ const series = await getHistory(
   source: 'USD',
   target: 'TJS',
   from: '2026-01-01',
-  to: '2026-09-09',
+  to: '2026-09-25',
   count: 152,
   rates: [
     // one entry per publication date
-    { date: '2026-09-09', rate: 9.2414, rate_type: 'reference', derived: false, method: 'published' },
+    { date: '2026-09-25', rate: 9.2303, rate_type: 'reference', derived: false, method: 'published' },
     // …
   ],
   disclaimer: '…'
