@@ -4,6 +4,8 @@
 [![license](https://img.shields.io/npm/l/national-bank-of-tajikistan-exchange-rate.svg)](https://github.com/AllRates-Today/national-bank-of-tajikistan-exchange-rate/blob/main/LICENSE)
 [![zero dependencies](https://img.shields.io/badge/dependencies-0-brightgreen.svg)](https://www.npmjs.com/package/national-bank-of-tajikistan-exchange-rate)
 [![TypeScript](https://img.shields.io/badge/TypeScript-types%20included-3178C6.svg)](https://www.typescriptlang.org/)
+[![USD/TJS today](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fallratestoday.com%2Fapi%2Fopen%2Fcentral-bank%2Fnbt%3Fsource%3DUSD%26target%3DTJS&query=%24.rate&label=USD%2FTJS%20published%20by%20National%20Bank%20of%20Tajikistan&color=0A7E8C&cacheSeconds=3600)](https://allratestoday.com/central-bank-rates-api/nbt/)
+[![rate date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fallratestoday.com%2Fapi%2Fopen%2Fcentral-bank%2Fnbt%3Fsource%3DUSD%26target%3DTJS&query=%24.rate_date&label=rate%20date&color=555&cacheSeconds=3600)](https://allratestoday.com/central-bank-rates-api/nbt/)
 
 **Official National Bank of Tajikistan (Tajikistan) daily exchange rates for Node.js and TypeScript. The published central bank rates behind tax filings, customs valuations, audits, and compliant invoicing — not market estimates, but the numbers National Bank of Tajikistan itself prints, every business day.**
 
@@ -32,6 +34,55 @@ console.log(r.rate_date, r.rates.length); // the central bank's latest published
 ```
 
 The open endpoint serves the *latest* table only and asks for a visible attribution link. The client below uses the keyed API, which adds point-in-time tables, history, and CSV/XML/Excel output.
+
+## 📈 Latest published table
+
+Today's full National Bank of Tajikistan table, straight from the central bank's latest publication. On GitHub it is refreshed by [a daily Action](.github/workflows/daily-table.yml) that reads the keyless endpoint above and commits only when the central bank publishes a new table; the copy on npm is as of the package's publish date.
+
+<!-- daily-table:start -->
+Published **2026-10-09** by National Bank of Tajikistan — 36 rates. Updated 2026-10-09.
+
+| Base | Quote | Type | Rate |
+| --- | --- | --- | ---: |
+| AED | TJS | reference | 2.5153 |
+| AFN | TJS | reference | 0.14222 |
+| AMD | TJS | reference | 0.025662 |
+| AUD | TJS | reference | 6.4124 |
+| AZN | TJS | reference | 5.4344 |
+| BYN | TJS | reference | 3.027 |
+| CAD | TJS | reference | 6.4713 |
+| CHF | TJS | reference | 11.0825 |
+| CNY | TJS | reference | 1.3778 |
+| DKK | TJS | reference | 1.3816 |
+| EUR | TJS | reference | 10.3276 |
+| GBP | TJS | reference | 12.191 |
+| GEL | TJS | reference | 3.5504 |
+| INR | TJS | reference | 0.09545 |
+| IRR | TJS | reference | 0.0000052 |
+| ISK | TJS | reference | 0.07529 |
+| JPY | TJS | reference | 0.05836 |
+| KGS | TJS | reference | 0.10564 |
+| KRW | TJS | reference | 0.006869 |
+| KWD | TJS | reference | 29.9753 |
+| KZT | TJS | reference | 0.02058 |
+| MDL | TJS | reference | 0.5163 |
+| MYR | TJS | reference | 2.256 |
+| NOK | TJS | reference | 0.9631 |
+| PKR | TJS | reference | 0.03335 |
+| PLN | TJS | reference | 2.3579 |
+| RUB | TJS | reference | 0.1081 |
+| SAR | TJS | reference | 2.4606 |
+| SEK | TJS | reference | 0.9213 |
+| SGD | TJS | reference | 7.2017 |
+| THB | TJS | reference | 0.2741 |
+| TMT | TJS | reference | 2.6395 |
+| TRY | TJS | reference | 0.1877 |
+| UAH | TJS | reference | 0.2056 |
+| USD | TJS | reference | 9.2384 |
+| UZS | TJS | reference | 0.000782 |
+
+Source: [Official rates published by NBT, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/nbt/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
+<!-- daily-table:end -->
 
 ## 🔑 Get your API key
 
