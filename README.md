@@ -40,46 +40,46 @@ The open endpoint serves the *latest* table only and asks for a visible attribut
 Today's full National Bank of Tajikistan table, straight from the central bank's latest publication. On GitHub it is refreshed by [a daily Action](.github/workflows/daily-table.yml) that reads the keyless endpoint above and commits only when the central bank publishes a new table; the copy on npm is as of the package's publish date.
 
 <!-- daily-table:start -->
-Published **2026-10-09** by National Bank of Tajikistan — 36 rates. Updated 2026-10-09.
+Published **2026-10-10** by National Bank of Tajikistan — 36 rates. Updated 2026-10-12.
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AED | TJS | reference | 2.5153 |
-| AFN | TJS | reference | 0.14222 |
-| AMD | TJS | reference | 0.025662 |
-| AUD | TJS | reference | 6.4124 |
-| AZN | TJS | reference | 5.4344 |
-| BYN | TJS | reference | 3.027 |
-| CAD | TJS | reference | 6.4713 |
-| CHF | TJS | reference | 11.0825 |
-| CNY | TJS | reference | 1.3778 |
-| DKK | TJS | reference | 1.3816 |
-| EUR | TJS | reference | 10.3276 |
-| GBP | TJS | reference | 12.191 |
-| GEL | TJS | reference | 3.5504 |
-| INR | TJS | reference | 0.09545 |
+| AED | TJS | reference | 2.5146 |
+| AFN | TJS | reference | 0.14218 |
+| AMD | TJS | reference | 0.02562 |
+| AUD | TJS | reference | 6.4495 |
+| AZN | TJS | reference | 5.4329 |
+| BYN | TJS | reference | 3.0418 |
+| CAD | TJS | reference | 6.491 |
+| CHF | TJS | reference | 11.1116 |
+| CNY | TJS | reference | 1.3801 |
+| DKK | TJS | reference | 1.3853 |
+| EUR | TJS | reference | 10.3582 |
+| GBP | TJS | reference | 12.222 |
+| GEL | TJS | reference | 3.5497 |
+| INR | TJS | reference | 0.09547 |
 | IRR | TJS | reference | 0.0000052 |
-| ISK | TJS | reference | 0.07529 |
+| ISK | TJS | reference | 0.07562 |
 | JPY | TJS | reference | 0.05836 |
-| KGS | TJS | reference | 0.10564 |
-| KRW | TJS | reference | 0.006869 |
-| KWD | TJS | reference | 29.9753 |
-| KZT | TJS | reference | 0.02058 |
-| MDL | TJS | reference | 0.5163 |
-| MYR | TJS | reference | 2.256 |
-| NOK | TJS | reference | 0.9631 |
-| PKR | TJS | reference | 0.03335 |
-| PLN | TJS | reference | 2.3579 |
-| RUB | TJS | reference | 0.1081 |
-| SAR | TJS | reference | 2.4606 |
-| SEK | TJS | reference | 0.9213 |
-| SGD | TJS | reference | 7.2017 |
-| THB | TJS | reference | 0.2741 |
-| TMT | TJS | reference | 2.6395 |
-| TRY | TJS | reference | 0.1877 |
-| UAH | TJS | reference | 0.2056 |
-| USD | TJS | reference | 9.2384 |
-| UZS | TJS | reference | 0.000782 |
+| KGS | TJS | reference | 0.10561 |
+| KRW | TJS | reference | 0.006884 |
+| KWD | TJS | reference | 29.9676 |
+| KZT | TJS | reference | 0.02035 |
+| MDL | TJS | reference | 0.516 |
+| MYR | TJS | reference | 2.2598 |
+| NOK | TJS | reference | 0.9653 |
+| PKR | TJS | reference | 0.03334 |
+| PLN | TJS | reference | 2.3637 |
+| RUB | TJS | reference | 0.1087 |
+| SAR | TJS | reference | 2.4594 |
+| SEK | TJS | reference | 0.9263 |
+| SGD | TJS | reference | 7.2139 |
+| THB | TJS | reference | 0.2753 |
+| TMT | TJS | reference | 2.6389 |
+| TRY | TJS | reference | 0.1872 |
+| UAH | TJS | reference | 0.2058 |
+| USD | TJS | reference | 9.236 |
+| UZS | TJS | reference | 0.00078 |
 
 Source: [Official rates published by NBT, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/nbt/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
 <!-- daily-table:end -->
