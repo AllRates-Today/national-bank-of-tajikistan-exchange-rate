@@ -33,55 +33,58 @@ const r = await fetch('https://allratestoday.com/api/open/central-bank/nbt').the
 console.log(r.rate_date, r.rates.length); // the central bank's latest published table, no key
 ```
 
-The open endpoint serves the *latest* table only and asks for a visible attribution link. The client below uses the keyed API, which adds point-in-time tables, history, and CSV/XML/Excel output.
+The open endpoint serves the *latest* table only (JSON by default; add `?format=csv`, `xml` or `xlsx` for a file) and asks for a visible attribution link. The client below uses the keyed API, which adds point-in-time tables and history.
 
 ## 📈 Latest published table
 
 [![Latest National Bank of Tajikistan table](https://allratestoday.com/api/open/central-bank/nbt/table.svg)](https://allratestoday.com/central-bank-rates-api/nbt/)
 
-The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The text copy below is there for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
+The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The same table as text is folded below for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
-Published **2026-10-16** by National Bank of Tajikistan — 36 rates. Updated 2026-10-16.
+<details>
+<summary>Table as text: published 2026-10-17 by National Bank of Tajikistan — 36 rates. Updated 2026-10-19.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AED | TJS | reference | 2.5145 |
-| AFN | TJS | reference | 0.14201 |
-| AMD | TJS | reference | 0.025727 |
-| AUD | TJS | reference | 6.3914 |
-| AZN | TJS | reference | 5.433 |
-| BYN | TJS | reference | 3.0709 |
-| CAD | TJS | reference | 6.5061 |
-| CHF | TJS | reference | 11.1265 |
-| CNY | TJS | reference | 1.3803 |
-| DKK | TJS | reference | 1.3858 |
-| EUR | TJS | reference | 10.3611 |
-| GBP | TJS | reference | 12.2452 |
-| GEL | TJS | reference | 3.5538 |
-| INR | TJS | reference | 0.09716 |
+| AED | TJS | reference | 2.5157 |
+| AFN | TJS | reference | 0.14208 |
+| AMD | TJS | reference | 0.025701 |
+| AUD | TJS | reference | 6.4298 |
+| AZN | TJS | reference | 5.435 |
+| BYN | TJS | reference | 3.0704 |
+| CAD | TJS | reference | 6.5292 |
+| CHF | TJS | reference | 11.2266 |
+| CNY | TJS | reference | 1.3822 |
+| DKK | TJS | reference | 1.3912 |
+| EUR | TJS | reference | 10.4 |
+| GBP | TJS | reference | 12.3255 |
+| GEL | TJS | reference | 3.5554 |
+| INR | TJS | reference | 0.09729 |
 | IRR | TJS | reference | 0.0000052 |
-| ISK | TJS | reference | 0.07586 |
-| JPY | TJS | reference | 0.05851 |
-| KGS | TJS | reference | 0.10562 |
-| KRW | TJS | reference | 0.006865 |
-| KWD | TJS | reference | 29.9679 |
-| KZT | TJS | reference | 0.02034 |
-| MDL | TJS | reference | 0.5141 |
-| MYR | TJS | reference | 2.261 |
-| NOK | TJS | reference | 0.9717 |
-| PKR | TJS | reference | 0.03335 |
-| PLN | TJS | reference | 2.371 |
-| RUB | TJS | reference | 0.11 |
-| SAR | TJS | reference | 2.4611 |
-| SEK | TJS | reference | 0.927 |
-| SGD | TJS | reference | 7.2016 |
-| THB | TJS | reference | 0.2756 |
-| TMT | TJS | reference | 2.6389 |
-| TRY | TJS | reference | 0.1869 |
+| ISK | TJS | reference | 0.07626 |
+| JPY | TJS | reference | 0.05845 |
+| KGS | TJS | reference | 0.10565 |
+| KRW | TJS | reference | 0.006938 |
+| KWD | TJS | reference | 29.9789 |
+| KZT | TJS | reference | 0.02035 |
+| MDL | TJS | reference | 0.5155 |
+| MYR | TJS | reference | 2.2624 |
+| NOK | TJS | reference | 0.9779 |
+| PKR | TJS | reference | 0.03336 |
+| PLN | TJS | reference | 2.3798 |
+| RUB | TJS | reference | 0.1104 |
+| SAR | TJS | reference | 2.462 |
+| SEK | TJS | reference | 0.9329 |
+| SGD | TJS | reference | 7.2229 |
+| THB | TJS | reference | 0.2763 |
+| TMT | TJS | reference | 2.6399 |
+| TRY | TJS | reference | 0.1865 |
 | UAH | TJS | reference | 0.2059 |
-| USD | TJS | reference | 9.2361 |
-| UZS | TJS | reference | 0.000772 |
+| USD | TJS | reference | 9.2395 |
+| UZS | TJS | reference | 0.000769 |
+
+</details>
 
 Source: [Official rates published by NBT, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/nbt/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
 <!-- daily-table:end -->
@@ -354,7 +357,8 @@ Need the whole archive rather than an API call? The same published tables are mi
 - [All central bank sources](https://allratestoday.com/central-bank-rates-api/)
 - [Package docs on the site](https://allratestoday.com/docs/sdk/national-bank-of-tajikistan-exchange-rate/) · [ERP integration guides](https://allratestoday.com/docs/integrations/)
 - [API documentation](https://allratestoday.com/docs/#central-bank) · [Interactive reference](https://allratestoday.com/api-reference/) · [Methodology](https://allratestoday.com/official-rates-methodology/)
-- [Register (free)](https://allratestoday.com/register) · [Pricing](https://allratestoday.com/pricing/)
+- [Register (Free)](https://allratestoday.com/register) · [Dashboard](https://allratestoday.com/profile) · [Pricing](https://allratestoday.com/pricing/)
+- [Status](https://allratestoday.com/status)
 - [GitHub](https://github.com/AllRates-Today/national-bank-of-tajikistan-exchange-rate)
 
 ## 📜 License
