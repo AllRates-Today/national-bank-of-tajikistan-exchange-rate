@@ -47,46 +47,46 @@ The image is rendered live from the keyless endpoint above, so it follows the ce
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-10-23 by National Bank of Tajikistan — 36 rates. Updated 2026-10-23.</summary>
+<summary>Table as text: published 2026-10-24 by National Bank of Tajikistan — 36 rates. Updated 2026-10-26.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AED | TJS | reference | 2.5083 |
-| AFN | TJS | reference | 0.14164 |
-| AMD | TJS | reference | 0.025664 |
-| AUD | TJS | reference | 6.4457 |
-| AZN | TJS | reference | 5.4196 |
-| BYN | TJS | reference | 3.1232 |
-| CAD | TJS | reference | 6.5613 |
-| CHF | TJS | reference | 11.2112 |
-| CNY | TJS | reference | 1.3805 |
-| DKK | TJS | reference | 1.3803 |
-| EUR | TJS | reference | 10.3181 |
-| GBP | TJS | reference | 12.3165 |
-| GEL | TJS | reference | 3.5469 |
-| INR | TJS | reference | 0.09716 |
+| AED | TJS | reference | 2.5081 |
+| AFN | TJS | reference | 0.14165 |
+| AMD | TJS | reference | 0.025659 |
+| AUD | TJS | reference | 6.4648 |
+| AZN | TJS | reference | 5.4186 |
+| BYN | TJS | reference | 3.1433 |
+| CAD | TJS | reference | 6.5798 |
+| CHF | TJS | reference | 11.1738 |
+| CNY | TJS | reference | 1.3812 |
+| DKK | TJS | reference | 1.3793 |
+| EUR | TJS | reference | 10.3116 |
+| GBP | TJS | reference | 12.3206 |
+| GEL | TJS | reference | 3.5466 |
+| INR | TJS | reference | 0.09702 |
 | IRR | TJS | reference | 0.000005 |
-| ISK | TJS | reference | 0.07567 |
-| JPY | TJS | reference | 0.05874 |
-| KGS | TJS | reference | 0.10536 |
-| KRW | TJS | reference | 0.006959 |
-| KWD | TJS | reference | 29.9088 |
-| KZT | TJS | reference | 0.02054 |
-| MDL | TJS | reference | 0.5135 |
-| MYR | TJS | reference | 2.2549 |
-| NOK | TJS | reference | 0.9824 |
+| ISK | TJS | reference | 0.07562 |
+| JPY | TJS | reference | 0.0587 |
+| KGS | TJS | reference | 0.10534 |
+| KRW | TJS | reference | 0.006957 |
+| KWD | TJS | reference | 29.9033 |
+| KZT | TJS | reference | 0.02042 |
+| MDL | TJS | reference | 0.5115 |
+| MYR | TJS | reference | 2.2534 |
+| NOK | TJS | reference | 0.9854 |
 | PKR | TJS | reference | 0.03327 |
-| PLN | TJS | reference | 2.3594 |
-| RUB | TJS | reference | 0.1135 |
-| SAR | TJS | reference | 2.4556 |
-| SEK | TJS | reference | 0.9278 |
-| SGD | TJS | reference | 7.2092 |
-| THB | TJS | reference | 0.2728 |
-| TMT | TJS | reference | 2.6324 |
-| TRY | TJS | reference | 0.1856 |
-| UAH | TJS | reference | 0.2045 |
-| USD | TJS | reference | 9.2134 |
-| UZS | TJS | reference | 0.00077 |
+| PLN | TJS | reference | 2.3463 |
+| RUB | TJS | reference | 0.1144 |
+| SAR | TJS | reference | 2.4542 |
+| SEK | TJS | reference | 0.9265 |
+| SGD | TJS | reference | 7.2051 |
+| THB | TJS | reference | 0.2729 |
+| TMT | TJS | reference | 2.6319 |
+| TRY | TJS | reference | 0.1852 |
+| UAH | TJS | reference | 0.2034 |
+| USD | TJS | reference | 9.2117 |
+| UZS | TJS | reference | 0.000774 |
 
 </details>
 
