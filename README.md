@@ -47,46 +47,46 @@ The image is rendered live from the keyless endpoint above, so it follows the ce
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-10-28 by National Bank of Tajikistan — 36 rates. Updated 2026-10-28.</summary>
+<summary>Table as text: published 2026-10-29 by National Bank of Tajikistan — 36 rates. Updated 2026-10-29.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AED | TJS | reference | 2.5102 |
-| AFN | TJS | reference | 0.14151 |
-| AMD | TJS | reference | 0.025824 |
-| AUD | TJS | reference | 6.4847 |
-| AZN | TJS | reference | 5.423 |
-| BYN | TJS | reference | 3.139 |
-| CAD | TJS | reference | 6.5757 |
-| CHF | TJS | reference | 11.1261 |
+| AED | TJS | reference | 2.5094 |
+| AFN | TJS | reference | 0.1415 |
+| AMD | TJS | reference | 0.025819 |
+| AUD | TJS | reference | 6.4844 |
+| AZN | TJS | reference | 5.422 |
+| BYN | TJS | reference | 3.1326 |
+| CAD | TJS | reference | 6.5637 |
+| CHF | TJS | reference | 11.104 |
 | CNY | TJS | reference | 1.383 |
-| DKK | TJS | reference | 1.3749 |
-| EUR | TJS | reference | 10.2793 |
-| GBP | TJS | reference | 12.2854 |
-| GEL | TJS | reference | 3.5505 |
-| INR | TJS | reference | 0.09692 |
+| DKK | TJS | reference | 1.3721 |
+| EUR | TJS | reference | 10.2562 |
+| GBP | TJS | reference | 12.2499 |
+| GEL | TJS | reference | 3.5506 |
+| INR | TJS | reference | 0.09679 |
 | IRR | TJS | reference | 0.000005 |
-| ISK | TJS | reference | 0.07526 |
-| JPY | TJS | reference | 0.05847 |
-| KGS | TJS | reference | 0.10542 |
-| KRW | TJS | reference | 0.006945 |
-| KWD | TJS | reference | 29.9127 |
-| KZT | TJS | reference | 0.02023 |
-| MDL | TJS | reference | 0.5105 |
-| MYR | TJS | reference | 2.2535 |
-| NOK | TJS | reference | 0.9879 |
+| ISK | TJS | reference | 0.07519 |
+| JPY | TJS | reference | 0.05837 |
+| KGS | TJS | reference | 0.1054 |
+| KRW | TJS | reference | 0.006877 |
+| KWD | TJS | reference | 29.8878 |
+| KZT | TJS | reference | 0.02017 |
+| MDL | TJS | reference | 0.5092 |
+| MYR | TJS | reference | 2.2592 |
+| NOK | TJS | reference | 0.9916 |
 | PKR | TJS | reference | 0.0333 |
-| PLN | TJS | reference | 2.3325 |
-| RUB | TJS | reference | 0.1144 |
+| PLN | TJS | reference | 2.3272 |
+| RUB | TJS | reference | 0.1142 |
 | SAR | TJS | reference | 2.4563 |
-| SEK | TJS | reference | 0.9267 |
-| SGD | TJS | reference | 7.1962 |
-| THB | TJS | reference | 0.2732 |
-| TMT | TJS | reference | 2.634 |
-| TRY | TJS | reference | 0.1852 |
-| UAH | TJS | reference | 0.2021 |
-| USD | TJS | reference | 9.2191 |
-| UZS | TJS | reference | 0.000775 |
+| SEK | TJS | reference | 0.9277 |
+| SGD | TJS | reference | 7.1882 |
+| THB | TJS | reference | 0.2727 |
+| TMT | TJS | reference | 2.6335 |
+| TRY | TJS | reference | 0.1849 |
+| UAH | TJS | reference | 0.2022 |
+| USD | TJS | reference | 9.2174 |
+| UZS | TJS | reference | 0.000774 |
 
 </details>
 
@@ -251,6 +251,7 @@ The National Bank of Tajikistan sets the official somoni rate for 36 currencies 
 
 - Publisher's own page: [Official exchange rates](https://nbt.tj/en/kurs/kurs.php) · [nbt.tj](https://nbt.tj)
 - Publication: every business day; the exact schedule, freshness status and any current delay are on the [National Bank of Tajikistan rates page](https://allratestoday.com/central-bank-rates-api/nbt/)
+- In the API: usually by **23:15 UTC** (measured over the last 11 publications). Schedule a sync at or after that time and retry hourly until `rate_date` moves; every response carries the same figure as `available_by_utc` — see [when to poll](https://allratestoday.com/docs/#when-to-poll)
 - Values are stored unmodified, with the publisher's own `rate_date` on every row — see the [methodology](https://allratestoday.com/official-rates-methodology/)
 
 ## 🧭 Reading the numbers
