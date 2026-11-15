@@ -1,6 +1,6 @@
 {
   "name": "national-bank-of-tajikistan-exchange-rate",
-  "version": "1.3.30",
+  "version": "1.3.31",
   "description": "Official National Bank of Tajikistan (Tajikistan) daily exchange rates — 36 currencies vs TJS, history since 2010. Zero-dependency Node.js/TypeScript client.",
   "keywords": [
     "nbt",
@@ -10,6 +10,7 @@
     "tajikistan",
     "exchange-rate",
     "exchange-rates",
+    "exchange-rate-api",
     "exchangerate",
     "exchange rate",
     "exchange rates",
