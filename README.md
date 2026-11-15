@@ -31,7 +31,51 @@ Get a free API key at [allratestoday.com/register](https://allratestoday.com/reg
 The image is rendered live from the keyless endpoint, so it follows the central bank's publications on npm and on GitHub alike without a new release. The same table as text is folded below for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
-_The table is filled in by the daily workflow._
+<details>
+<summary>Table as text: published 2026-11-13 by National Bank of Tajikistan — 36 rates. Updated 2026-11-15.</summary>
+
+| Base | Quote | Type | Rate |
+| --- | --- | --- | ---: |
+| AED | TJS | reference | 2.5087 |
+| AFN | TJS | reference | 0.14095 |
+| AMD | TJS | reference | 0.025595 |
+| AUD | TJS | reference | 6.2923 |
+| AZN | TJS | reference | 5.4201 |
+| BYN | TJS | reference | 3.0626 |
+| CAD | TJS | reference | 6.4669 |
+| CHF | TJS | reference | 11.0746 |
+| CNY | TJS | reference | 1.3818 |
+| DKK | TJS | reference | 1.367 |
+| EUR | TJS | reference | 10.2212 |
+| GBP | TJS | reference | 12.2271 |
+| GEL | TJS | reference | 3.553 |
+| INR | TJS | reference | 0.09797 |
+| IRR | TJS | reference | 0.0000048 |
+| ISK | TJS | reference | 0.07473 |
+| JPY | TJS | reference | 0.05771 |
+| KGS | TJS | reference | 0.10537 |
+| KRW | TJS | reference | 0.00691 |
+| KWD | TJS | reference | 29.8529 |
+| KZT | TJS | reference | 0.02077 |
+| MDL | TJS | reference | 0.5089 |
+| MYR | TJS | reference | 2.2578 |
+| NOK | TJS | reference | 0.9648 |
+| PKR | TJS | reference | 0.03331 |
+| PLN | TJS | reference | 2.3206 |
+| RUB | TJS | reference | 0.111 |
+| SAR | TJS | reference | 2.4551 |
+| SEK | TJS | reference | 0.9248 |
+| SGD | TJS | reference | 7.1694 |
+| THB | TJS | reference | 0.2726 |
+| TMT | TJS | reference | 2.6326 |
+| TRY | TJS | reference | 0.1833 |
+| UAH | TJS | reference | 0.2028 |
+| USD | TJS | reference | 9.2141 |
+| UZS | TJS | reference | 0.00077 |
+
+</details>
+
+Source: [Official rates published by NBT, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/nbt/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
 <!-- daily-table:end -->
 
 ## 📦 Installation
